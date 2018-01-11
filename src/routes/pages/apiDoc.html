@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Api Documentaion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .container {
+            margin: 2.5vw;
+        }
+
+        .apiContainer {
+            padding: 5px;
+            border: black 1px solid;
+            border-radius: 5px;
+        }
+
+        .apiRoute {
+            background-color: lightgrey;
+            border-bottom: blue solid 1px;
+        }
+
+        .apiRoute>.title {
+            font-size: 2em;
+            -webkit-margin-before: 0.67em;
+            -webkit-margin-after: 0.67em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            font-weight: bold;
+        }
+
+        .apiRoute>.def {
+            font-size: 2em;
+            -webkit-margin-before: 0.67em;
+            -webkit-margin-after: 0.67em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+        }
+
+        .verb>.title {
+            font-size: 1em;
+            -webkit-margin-before: 0.67em;
+            -webkit-margin-after: 0.67em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            font-weight: bold;
+        }
+
+        .verb>.def {
+            font-size: 1em;
+            -webkit-margin-before: 0.67em;
+            -webkit-margin-after: 0.67em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+        }
+
+        .parameter>.title {
+            font-size: 1em;
+            -webkit-margin-before: 0.67em;
+            -webkit-margin-after: 0.67em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            font-weight: bold;
+        }
+
+        .parameter>.def {
+            font-size: 1em;
+            -webkit-margin-before: 0.67em;
+            -webkit-margin-after: 0.67em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+        }
+
+        .example {
+            float: right;
+        }
+
+        .example>.title {
+            font-size: 1em;
+            -webkit-margin-before: 0.67em;
+            -webkit-margin-after: 0.67em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            font-weight: bold;
+        }
+
+        .example>.def {
+            font-size: 1em;
+            -webkit-margin-before: 0.67em;
+            -webkit-margin-after: 0.67em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+        }
+
+        .example:after {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="apiContainer">
+            <div class="apiRoute">
+                <span class="title">Route: </span>
+                <span class="def">/api/findnearest</span>
+            </div>
+            <div class="apiDescription">
+                <div class="example">
+                    <span class="title">Example: </span>
+                    <span class="def">http://IPADDRESS:PORT/api/findnearest?latitude=39.103236&longitude=-94.582709</span>
+                </div>
+                <div class="verb">
+                    <span class="title">Type: </span>
+                    <span class="def">Get Request</span>
+                </div>
+                <div class="parameter">
+                    <span class="title">Latitude </span>
+                    <span class="def">*REQUIRED*</span>
+                </div>
+                <div class="parameter">
+                    <span class="title">Longitude </span>
+                    <span class="def">*REQUIRED*</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
