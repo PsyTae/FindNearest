@@ -1,7 +1,19 @@
+// npm i --save express morgan async @turf/turf d3-dsv express-uncapitalize
 /* eslint no-console: 0 */
-const nearest = require("./findNearest");
+const express = require("express");
+const morgan = require("morgan");
+const routes = require("./routes/index");
 
-nearest([-94.266627, 38.97931], (err, result) => {
-    if (err) console.error("Error:", err);
-    console.log("Result:", result);
+const app = express();
+const expressPort = process.env.PORT || 8080;
+
+app.set("json spaces", 2);
+app.use(require("express-uncapitalize")());
+
+app.use(morgan("dev"));
+
+app.use(routes);
+
+app.listen(expressPort, () => {
+    console.log(`Express listening on port ${expressPort}`);
 });
