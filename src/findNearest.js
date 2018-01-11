@@ -36,6 +36,12 @@ const findNearest = (inPoint, cb) => {
         jsonData,
         (el, next) => {
             el.name = el.name.trim();
+            el.address = el.address.trim();
+            el.city = el.city.trim();
+            el.state = el.state.trim();
+            el.zip = el.zip.trim();
+            el.latitude = el.latitude.trim();
+            el.longitude = el.longitude.trim();
             const pharmacy = turf.point([el.longitude, el.latitude]);
             el.distanceInMiles = turf.distance(here, pharmacy, {
                 units: "miles"
