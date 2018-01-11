@@ -1,0 +1,29 @@
+{
+    "name": "rxcodetest",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "@turf/turf": "^5.1.6",
+        "async": "^2.6.0",
+        "d3-dsv": "^1.0.8"
+    },
+    "devDependencies": {
+        "eslint": "^4.15.0",
+        "eslint-config-airbnb": "^16.1.0",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-plugin-import": "^2.8.0",
+        "eslint-plugin-jsx-a11y": "^6.0.3",
+        "eslint-plugin-prettier": "^2.4.0",
+        "eslint-plugin-react": "^7.5.1",
+        "nodemon": "^1.14.10",
+        "prettier": "^1.10.2"
+    },
+    "scripts": {
+        "pkg": "pkg src/index.js --output runme",
+        "start": "nodemon src/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Shaun Branham <'Shaun.Branham@digitalallyinc.com'>",
+    "license": "ISC"
+}
